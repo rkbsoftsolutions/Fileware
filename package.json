@@ -1,0 +1,15 @@
+{
+  "name": "CrazyBuy",
+  "private": true,
+  "scripts": {
+    "start": "meteor run --port 192.168.1.41:80"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-mounter": "^1.2.0",
+    "react-router": "^2.8.1"
+  }
+}
