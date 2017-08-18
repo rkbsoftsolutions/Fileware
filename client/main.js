@@ -1,19 +1,24 @@
-//
-//import {Menu}  from '../imports/startup/client/main.js' 
+import '/imports/startup/client'
+import Homes from '../imports/ui/pages/home';
+import UserLogin from '../imports/ui/pages/account/login'
+import App from '../imports/ui/App';
 import React from 'react';
-import {FlowRouter} from 'meteor/kadira:flow-router'
-import {Mainlayout}  from '../imports/startup/client/main.js'
-import {Home,Header,About,Categories}  from '../imports/ui/templates/home.js'
-import {mount} from 'react-mounter';
-import '/node_modules/bootstrap/dist/css/bootstrap.min.css'
+import { mount } from 'react-mounter';
+import  ReactDom  from 'react-dom';
 
-FlowRouter.route('/', {name: 'homepage',action() {mount(Mainlayout, {header:<Header/> ,content: <Home/>})}})
-FlowRouter.route('/about', {name: 'aboutpage',action() {mount(Mainlayout, {header:<Header/> ,content: <About/>})}})
-FlowRouter.route('/categories', {name: 'Categoriespage',action() {mount(Mainlayout, {header:<Header/> ,content: <Categories/>})}})
-
-
-
-Meteor.startup(() => 
-{
- //   ReactDOM.render(<Menu/>, document.getElementById('render-target'));
-});
+FlowRouter.route('/', {
+    name: 'home',
+    action() {
+      ReactLayout.render(mount(App,{content:"<a href='/login'/>"} ));
+    }
+  })
+  
+  FlowRouter.route('/login', {
+    name: 'login',
+    action() {
+      debugger;
+      ReactLayout.render(mount(App, { content:<UserLogin />    }));
+    }
+  })
+  
+  ReactDom.render(<App/>,document.getElementById("main"))

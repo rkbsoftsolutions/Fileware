@@ -1,20 +1,8 @@
-import {FlowRouter} from 'meteor/kadira:flow-router';
-import {mount} from 'react-mounter';
-import React from 'react';
-import {Mainlayout}  from './main.js'
-import {Home,Menu}  from '../../ui/templates/home.js'
+import { FlowRoutes } from 'meteor/kadira:flow-router';
+import { ReactLayout } from 'meteor/kadira:react-layout';
+import { Meteor } from 'meteor/meteor';
+
+ 
 
 
 
-// FlowRouter.route('/', {
-//     name: 'home',
-//     action() {
-// 	mount(Mainlayout,{
-// 		header:<Menu/>,
-// 		content: <Home/>,
-// 		footer:""
-// 		})
-// 	}
-// });
-
-    
