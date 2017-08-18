@@ -1,15 +1,15 @@
 import {FlowRouter} from 'meteor/kadira:flow-router';
 import {mount} from 'react-mounter';
 import React from 'react';
-import Homes from '../imports/ui/pages/home';
-import UserLogin from '../imports/ui/pages/account/login'
-import App from '../imports/ui/App';
+import Homes from '../../ui/pages/home';
+import UserLogin from '../../ui/pages/account/login'
+import App from '../../ui/App';
 import  ReactDom  from 'react-dom';
 
 FlowRouter.route('/', {
     name: 'home',
     action() {
-      ReactLayout.render(mount(App,{content:"<a href='/login'/>"} ));
+      ReactLayout.render(mount(<App/>,{content:"<a href='/login'/>"} ));
     }
   })
   
@@ -21,7 +21,7 @@ FlowRouter.route('/', {
     }
   })
   
-  ReactDom.render(<App/>,document.getElementById("main"))
+  //ReactDom.render(<App/>,document.getElementById("main"))
 
 
 
