@@ -12,11 +12,11 @@ Meteor.startup(()=>{
        email:"staronline1985@gmail.com",
    password:"123456",
    profile:{
-       firstName:"Rajinder" ,
-       lastName : "Kumar",
-       contactno : "8727836436",
-       city:"Chandigarh",
-       state:"Chandigarh"
+       firstName:"Demo User" ,
+       lastName : "User",
+       contactno : "1234567890",
+       city:"ABC",
+       state:"ABC"
    }
 }
   var _users= Accounts.findUserByUsername(user.username);
