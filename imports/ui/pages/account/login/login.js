@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Accounts } from 'meteor/accounts-base';
-import style from './login.css';
+import {Meteor} from 'meteor/meteor';
    class UserLogin extends Component{
 
      constructor(props){
@@ -13,23 +13,22 @@ import style from './login.css';
          var userName=e.currentTarget.form.userName.value;
          var password=e.currentTarget.form.password.value;
          if(userName!=="" && password!=="")
-    
          Meteor.loginWithPassword(userName,password,(res,error)=>{
-           debugger;
-
+   
          })
 
       }
 
      render(){
        return (
-         <div className={style.container}>
+         <div className="container">
          <form>
-           <input type="text" name="userName" ref="UserName" className={style.textbox} />
-           <input type="password" name="password" ref="Password"/>
-           <button type="submit" onClick={this.submitUserLogin}>Login</button>
+           <input type="text" placeholder="Email Here" name="userName" ref="UserName" className="form-control p5" />
+           <input type="password" placeholder="Password here" name="password" ref="Password" className="form-control p5"/>
+           <button type="submit" className="btn p5" onClick={this.submitUserLogin}>Login</button>
+           <a href="/registernew" className="btn p5">Don't have account ? Register it free</a>
           </form>
-          <a href="/login">Back</a>
+        
           </div>
          );
      }

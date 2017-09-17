@@ -24,5 +24,10 @@
     "react-mounter": "^1.2.0",
     "react-router": "^4.2.0",
     "sass-loader": "^6.0.6"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.0",
+    "eslint": "^4.7.0",
+    "eslint-plugin-react": "^7.3.0"
   }
 }
