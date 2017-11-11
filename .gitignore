@@ -1,3 +1,7 @@
 node_modules/
+<<<<<<< HEAD
 .vscode
 .meteor/local
+=======
+.vscode
+>>>>>>> c4e54a3a53ff0ba6c3b36cf21a95ad8b2c60b531

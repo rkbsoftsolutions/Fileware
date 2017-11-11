@@ -1,5 +1,5 @@
 {
-  "name": "FileWare",
+  "name": "Fileware",
   "private": true,
   "scripts": {
     "start": "meteor run"
