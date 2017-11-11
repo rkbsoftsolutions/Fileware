@@ -23,5 +23,6 @@ Meteor.startup(()=>{
   if(typeof _users==="undefined"){
   const userId= Accounts.createUser(user);
   console.log(userId);
+      
   }
 })
