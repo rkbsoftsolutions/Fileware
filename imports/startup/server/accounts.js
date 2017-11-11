@@ -16,7 +16,7 @@ Meteor.startup(()=>{
        lastName : "User",
        contactno : "1234567890",
        city:"ABC",
-       state:"ABC"
+       state:"ABC11111"
    }
 }
   var _users= Accounts.findUserByUsername(user.username);
